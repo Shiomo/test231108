@@ -1,0 +1,146 @@
+.content-container {
+    text-align: center; /* Optionally, you can center-align the text within the container */
+  }
+  
+  *{
+      box-sizing: border-box;
+    }
+   #flexbox{
+     display:flex;
+     background:#ffffff;
+     width: 1070px;
+     height:auto;
+     padding:auto;
+   }
+
+   body {
+    font-family: serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+    
+    #top img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  
+  .kokuchi1 {
+    margin: 5%;
+    display: flex;
+    justify-content: center; /* Horizontally center-align */
+    align-items: center; /* Vertically center-align */
+    background-color:00353F;
+    color: #fff;
+    border-style:solid;
+    border-color:#000000;
+    border-width:medium;
+    border-radius: 10px;
+  
+  }
+  
+  .kokuchi2{
+    margin: 5%;
+    display: flex;
+    justify-content: center; /* Horizontally center-align */
+    align-items: center; /* Vertically center-align */
+    background-color: rgb(255, 247, 177); 
+    color: #000000;
+    border-style:solid;
+    border-color:#000000;
+    border-width:medium;
+    border-radius: 10px;
+    line-height: 20px;
+  }
+  
+  .kokuchi3 {
+    margin: 5%;
+    display: flex;
+    justify-content: center; /* Horizontally center-align */
+    align-items: center; /* Vertically center-align */
+    background-color:#cdcdcd;
+    border-style:solid;
+    border-color:#cdcdcd;
+    border-width:medium;
+    border-radius: 10px;
+  }
+  
+  .kokuchi3-1{
+    margin: 5%;
+    display: flex;
+    justify-content: center; /* Horizontally center-align */
+    align-items: center; /* Vertically center-align */
+    background-color:#cdcdcd;
+    border-style:solid;
+    border-color:#000000;
+    border-width:medium;
+    border-radius: 10px;
+  }
+  
+  .menuWrap {
+    width: 100%;
+    max-width: 740px;
+    text-align: center;
+    margin: 100px auto 0
+  }
+  
+  .menuWrap .tabItem {
+    width: 20%;
+    height: auto;
+    color: #fff;
+    font-size: auto;
+    letter-spacing: 0.09em;
+    line-height: 50px;
+    text-align: center;
+    background: #c1c1c1;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    cursor: pointer
+  }
+  
+  .menuWrap .tabItem:hover { background: #000 }
+  .menuWrap input[name="tabItem"] { display: none }
+  .menuWrap .tabContent {
+    width: 100%;
+    max-width: 740px;
+    text-align: left;
+    margin-top: 60px;
+    display: none;
+    overflow: hidden
+  }
+
+  .back{
+    margin: 5%;
+    display: flex;
+    justify-content: center; /* Horizontally center-align */
+    align-items: center; /* Vertically center-align */
+    background-color:00353F;
+    color: #fff;
+    border-style:solid;
+    border-color:#000000;
+    border-width:medium;
+    border-radius: 50px;
+  
+  }
+
+  
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  footer{
+    height: 10opx;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center; /* Horizontally center-align */
+    align-items: center; /* Vertically center-align */
+    background-color:#00353F;
+    color: #fff;
+  }

@@ -1,0 +1,339 @@
+/*-----------------------------------
+sakura_block
+-----------------------------------*/
+#sakura_block{
+  position: fixed;
+  width: 100%;
+  z-index: -1000;
+}
+#sakura_block .sakura_parts_box{
+  position: relative;
+}
+#sakura_block .sakura_parts_box img{
+  position: absolute;
+}
+#sakura_block .sakura_parts_box img:nth-child(2n+1){
+  width: 15px;/*花びらのサイズ*/
+}
+#sakura_block .sakura_parts_box img:nth-child(2n){
+  width: 20px;/*花びらのサイズ*/
+}
+
+/*-----------------------------------
+桜の花びらパーツの表示位置
+-----------------------------------*/
+img.parts_01{top: 0; left: 5%;}
+img.parts_02{top: 0; left: 12%;}
+img.parts_03{top: 0; left: 15%;}
+img.parts_04{top: 0; left: 22%;}
+img.parts_05{top: 0; left: 25%;}
+img.parts_06{top: 0; left: 28%;}
+img.parts_07{top: 0; left: 35%;}
+img.parts_08{top: 0; left: 40%;}
+img.parts_09{top: 0; left: 43%;}
+img.parts_10{top: 0; left: 50%;}
+img.parts_11{top: 0; left: 55%;}
+img.parts_12{top: 0; left: 60%;}
+img.parts_13{top: 0; left: 63%;}
+img.parts_14{top: 0; left: 70%;}
+img.parts_15{top: 0; left: 75%;}
+img.parts_16{top: 0; left: 81%;}
+img.parts_17{top: 0; left: 85%;}
+img.parts_18{top: 0; left: 90%;}
+img.parts_19{top: 0; left: 93%;}
+
+
+/*-----------------------------------
+舞い散るアニメーション
+回転しつつ上から下へ
+-----------------------------------*/
+@keyframes sakura {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      transform:translate(3px,30px) rotate(20deg);
+      opacity: 1;
+    }
+    30% {
+      transform:translate(0,50px) rotate(50deg);
+    }
+    50% {
+      transform:translate(-20px,100px)  rotate(150deg);
+    }
+    70% {
+      transform:translate(-40px,150px) rotate(-50deg);
+      opacity: .8;
+    }
+    90% {
+      transform:translate(-60px,200px) rotate(-180deg);
+    }
+    100% {
+      transform:translate(-70px,230px);
+      opacity: 0;
+    }
+}
+
+.sakura_parts_box img {
+    animation: sakura linear 6s infinite;
+    /*アニメーションが始まるまで画像を見えなくしておく*/
+    opacity: 0;
+}
+
+/*-----------------------------------
+アニメーションが始まるまでの時間
+-----------------------------------*/
+img.parts_01,img.parts_04,img.parts_07,img.parts_10,img.parts_08,img.parts_11,img.parts_13,img.parts_16,img.parts_19{
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+img.parts_02,img.parts_05{
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+img.parts_03,img.parts_06,img.parts_09,img.parts_12{
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+img.parts_08,img.parts_11,img.parts_13,img.parts_16,img.parts_19{
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+img.parts_14,img.parts_17{
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+img.parts_15,img.parts_18{
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content-container {
+  text-align: center; /* Optionally, you can center-align the text within the container */
+}
+
+*{
+    box-sizing: border-box;
+  }
+ #flexbox{
+   display:flex;
+   background:#ffffff;
+   width: 1070px;
+   height:auto;
+   padding:auto;
+ }
+
+ body {
+  font-family: serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+
+  #top img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0;
+  }
+
+  #kikaku img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 5%;
+  }
+
+.kokuchi1 {
+  margin: 5%;
+  display: flex;
+  justify-content: center; /* Horizontally center-align */
+  align-items: center; /* Vertically center-align */
+  background-color:00353F;
+  color: #fff;
+  border-style:solid;
+  border-color:#00353F;
+  border-width:medium;
+  border-radius: 10px;
+
+}
+
+
+
+.kokuchi2{
+  margin: 5%;
+  display: flex;
+  justify-content: center; /* Horizontally center-align */
+  align-items: center; /* Vertically center-align */
+  background: linear-gradient(#FFF8B5, #efad6e); 
+  color: #000000;
+  border-style:solid;
+  border-color:#FFF8B5; 
+  border-width:medium;
+  border-radius: 10px;
+  line-height: 20px;
+}
+
+.kokuchi3 {
+  margin: 5%;
+  display: flex;
+  justify-content: center; /* Horizontally center-align */
+  align-items: center; /* Vertically center-align */
+  background-color:#cdcdcd;
+  border-style:solid;
+  border-color:#cdcdcd;
+  border-width:medium;
+  border-radius: 10px;
+}
+
+.kokuchi3-1{
+  margin: 5%;
+  display: flex;
+  justify-content: center; /* Horizontally center-align */
+  align-items: center; /* Vertically center-align */
+  background-color:#cdcdcd;
+  border-style:solid;
+  border-color:#000000;
+  border-width:medium;
+  border-radius: 10px;
+}
+
+.menuWrap {
+  width: 100%;
+  max-width: 740px;
+  text-align: center;
+  margin: 100px auto 0
+}
+
+.menuWrap .tabItem {
+  width: 20%;
+  height: auto;
+  color: #fff;
+  font-size: auto;
+  letter-spacing: 0.09em;
+  line-height: 50px;
+  text-align: center;
+  background: #c1c1c1;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  cursor: pointer;
+  border-style: solid;
+  border-color: #c1c1c1;
+  border-width: medium;
+  border-radius: 10px;
+}
+
+.menuWrap .tabItem:hover { background: #000 }
+.menuWrap input[name="tabItem"] { display: none }
+.menuWrap .tabContent {
+  width: 100%;
+  max-width: 740px;
+  text-align: left;
+  margin-top: 60px;
+  display: none;
+  overflow: hidden
+}
+
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+a :hover{
+  cursor: pointer;
+}
+
+.kokuchi4{
+  margin: 5%;
+  display: flex;
+  justify-content: center; /* Horizontally center-align */
+  align-items: center; /* Vertically center-align */
+  background-color:#953232;
+  color: #fff;
+  border-style:none;
+  border-color:#fff;
+  border-width:medium;
+  border-radius: 10px;
+}
+
+.kokuchi5{
+  margin: 5%;
+  display: flex;
+  justify-content: center; /* Horizontally center-align */
+  align-items: center; /* Vertically center-align */
+  background-color:#328495;
+  color: #fff;
+  border-style:none;
+  border-color:#fff;
+  border-width:medium;
+  border-radius: 10px;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+
+.OTAsns{
+  display: flex;
+  justify-content: center;
+  
+  }
+
+  .OTAsns {
+    display: flex;
+    justify-content: center; /* 水平方向に中央揃え */
+    align-items: center; /* 垂直方向に中央揃え */
+  }
+  
+  .OTAhp, .OTAx {
+    display: flex;
+    justify-content: center; /* 水平方向に中央揃え */
+    align-items: center; /* 垂直方向に中央揃え */
+    border-style: none;
+    border-radius: 7px;
+    padding: 5px;
+    color: #fff;
+  }
+  
+  .OTAhp {
+    background-color: #325A95;
+  }
+  
+  .OTAx {
+    background-color: #000000;
+  }
+  
+  .OTAx span {
+    display: block;  /* テキストを別行として表示 */
+    font-size: 8px; /* フォントサイズ調整 */
+  }
+
+
+  footer{
+    height: 100px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center; /* Horizontally center-align */
+    align-items: center; /* Vertically center-align */
+    background-color:#00353F;
+    color: #fff;
+  }
